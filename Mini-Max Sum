@@ -6,7 +6,7 @@ arr = [1,3,5,7,9]
 The minimum sum is 16 and the maximum sum is 24. 
 
 -----------------<>--------------------
-# Solution:
+# Own solution:
 
 def miniMaxSum(arr):
     sum_min, sum_max = 0,0
@@ -24,3 +24,8 @@ miniMaxSum([1,3,5,7,9])
 # Return 
 10 14
 16 24
+
+
+# Solution from another person that is more efficient
+def miniMaxSum(arr):
+    print(sum(arr) - max(arr), sum(arr) - min(arr))
