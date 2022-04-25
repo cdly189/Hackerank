@@ -7,7 +7,7 @@ arr = [ 1,1,0,-1,-1]
 There are 5 elements, two positive, two negative and one zero. Their ratios are 2/5, 2/5 and 1/5
 
 -----------------<>--------------------
-Solution:
+# Solution:
 
 def plusMinus(arr):
     pos, zero, neg = 0,0,0
@@ -21,3 +21,11 @@ def plusMinus(arr):
     print(f'{pos/len(arr):.6f}')
     print(f'{neg/len(arr):.6f}')
     print(f'{zero/len(arr):.6f}')
+
+# Test
+plusMinus[-4, 3, -9, 0, 4, 1].   
+
+# Return 
+0.500000
+0.333333
+0.166667
