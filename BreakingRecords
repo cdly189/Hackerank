@@ -1,0 +1,31 @@
+## Prompt:
+int[2]: An array with the numbers of times she broke her records. 
+Index  is for breaking most points records, and index  is for breaking least points records.
+
+# Example: 
+scores = [12,24,10,24]
+Return 1 1
+
+-----------------<>--------------------
+# Solution:
+
+def breakingRecords(scores):
+    count_min, count_max = 0,0
+    min_val = scores[0]
+    max_val = scores[0]
+    for score in scores:
+        if score < min_val:
+            min_val = score
+            count_min += 1
+        if score > max_val:
+            max_val = score
+            count_max += 1
+    print(count_max,count_min)
+
+# Test
+breakingRecords([12,24,10,24])
+breakingRecords([10,5,20,20,4,5,2,25,1])
+
+# Return 
+1 1
+2 4
